@@ -1,0 +1,136 @@
+/* Quora Realistic Styling */
+
+body {
+    background: #f7f7f8;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #282829;
+    margin-top: 0;
+}
+
+h1 {
+    background: #fff;
+    color: #b92b27;
+    padding: 18px 0 18px 40px;
+    margin: 0 0 30px 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    font-weight: 700;
+}
+
+.post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    margin: 24px auto;
+    padding: 24px 32px 16px 32px;
+    max-width: 650px;
+    border: 1px solid #e2e2e2;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+
+.post:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.username {
+    font-style: normal;
+    color: #636466;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    color: #282829;
+    font-size: 1.18rem;
+    margin: 12px 0 18px 0;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+a {
+    color: #b92b27;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 18px;
+    transition: color 0.2s;
+    font-size: 1rem;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+
+a:hover {
+    color: #fff;
+    background: #b92b27;
+    text-decoration: none;
+}
+
+form {
+    display: inline;
+}
+
+button {
+    background: #b92b27;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 8px;
+    transition: background 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+button:hover {
+    background: #a61d1a;
+    box-shadow: 0 2px 8px rgba(185,43,39,0.08);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    max-width: 540px;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 1.08rem;
+    background: #f7f7f8;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1.5px solid #b92b27;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+@media (max-width: 700px) {
+    .post {
+        padding: 16px 8px;
+        max-width: 98vw;
+    }
+    h1 {
+        padding-left: 12px;
+        font-size: 1.5rem;
+    }
+}
